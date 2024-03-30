@@ -16,6 +16,7 @@ def index():
     return render_template('index.html', ip_address=ip_address, port=port)
 
 
+
 @app.route('/upload', methods=['POST'])
 def upload_file():
     try:
@@ -33,6 +34,9 @@ def upload_file():
         return "Files uploaded successfully!"
     except Exception as e:
         return f"Error uploading files: {str(e)}", 500
+
+
+
 
 
 
