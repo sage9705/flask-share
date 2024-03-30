@@ -12,7 +12,7 @@
         <p>Port: <span id="port">{{ port }}</span></p>
     </div>
     <form id="upload-form" action="/upload" method="POST" enctype="multipart/form-data">
-        <input id="file-input" type="file" name="file">
+        <input id="file-input" type="file" name="file" multiple>
         <input type="submit" value="Upload">
     </form>
     <p id="success-message"></p>
